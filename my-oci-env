@@ -1,0 +1,9 @@
+#
+# put here your tenancy and user data
+#
+tenancyId="<your tenancy ocid>>";
+authUserId="<your tenancy ocid>";
+keyFingerprint="<your fingerprint>";
+#
+privateKeyPath=<path to oci private key in pem format>
+#
