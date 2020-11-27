@@ -9,7 +9,7 @@ chmod 700 oci-rest samples.sh
  ```
 put your env data in <b>my-oci-env</b> file <p>
 try some samples with <b>samples.sh</b><p>
-OCI RET API: https://docs.cloud.oracle.com/en-us/iaas/api/<p>
+OCI REST API: https://docs.cloud.oracle.com/en-us/iaas/api/<p>
 ## execution
 ```
 oci-rest <api-endpoint-without-protocol> <verb> <method>
