@@ -26,7 +26,7 @@ Example<p>
   "message" : "Authorization failed or requested resource not found."
 }
 ```
-Reason: Typo error in the method
+Reason: Typo error in the method or, if correct, you don't have permissions to use the endpoint
 ### You get this:
 ```
 {
