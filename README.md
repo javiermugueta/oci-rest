@@ -23,7 +23,7 @@ Example 2<p>
 cat <<EOF > body.json
 {
 	"granularity": "HOURLY",
-	"tenantId": "ocid1.tenancy.oc1..aaaaaaaaeicdft76mmsryhfleu2zqsbfnvaljkbkevjpnkznnaqdbhtdadpa",
+	"tenantId": "ocid1.tenancy.oc1..aaaaaaaaei...",
 	"timeUsageStarted": "2021-02-10T00:00:00.000Z",
 	"timeUsageEnded": "2021-02-11T00:00:00.000Z"
 }
