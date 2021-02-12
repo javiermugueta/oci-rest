@@ -14,10 +14,12 @@ OCI REST API: https://docs.cloud.oracle.com/en-us/iaas/api/<p>
 ```
 oci-rest <api-endpoint-without-protocol> [<file with json body for post verb>] <verb> <method>
 ```
-Examples<p>
+Example 1<p>
 ```
 ./oci-rest objectstorage.eu-frankfurt-1.oraclecloud.com get "/n/"
-
+```
+Example 2<p>
+```
 cat <<EOF > body.json
 {
 	"granularity": "HOURLY",
