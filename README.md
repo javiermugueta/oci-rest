@@ -12,7 +12,7 @@ try some samples with <b>samples.sh</b><p>
 OCI REST API: https://docs.cloud.oracle.com/en-us/iaas/api/<p>
 ## execution
 ```
-oci-rest <api-endpoint-without-protocol> <verb> <method>
+oci-rest <api-endpoint-without-protocol> [<file with json body for post verb>] <verb> <method>
 ```
 Example<p>
 ```

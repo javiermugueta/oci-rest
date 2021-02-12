@@ -1,9 +1,10 @@
 #
 # javier mugueta, nov 2020
+# updated feb 2021
 #
 usage(){
     echo "Usage:"
-    echo "      oci-rest <api-endpoint-without-protocol> <verb> <method>"
+    echo "      oci-rest <api-endpoint-without-protocol> <verb> [<jsonfile for post verb>] <method>"
 	echo "		verb: get, post,..."
 }
 #
@@ -126,14 +127,9 @@ function rawurlencode {
 }
 #
 #
-if [[ "$#" -ne 3 ]]; then
-    echo
-    echo "Wrong number of arguments passed!"
     echo
     usage
-	echo 
-    exit
-fi
-oci-curl $1 $2 $3
+    echo
 #
-
+oci-curl $1 $2 $3 $4
+#
