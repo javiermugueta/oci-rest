@@ -14,9 +14,19 @@ OCI REST API: https://docs.cloud.oracle.com/en-us/iaas/api/<p>
 ```
 oci-rest <api-endpoint-without-protocol> [<file with json body for post verb>] <verb> <method>
 ```
-Example<p>
+Examples<p>
 ```
 ./oci-rest objectstorage.eu-frankfurt-1.oraclecloud.com get "/n/"
+
+cat <<EOF > body.json
+{
+	"granularity": "HOURLY",
+	"tenantId": "ocid1.tenancy.oc1..aaaaaaaaeicdft76mmsryhfleu2zqsbfnvaljkbkevjpnkznnaqdbhtdadpa",
+	"timeUsageStarted": "2021-02-10T00:00:00.000Z",
+	"timeUsageEnded": "2021-02-11T00:00:00.000Z"
+}
+EOF
+./oci-rest usageapi.eu-frankfurt-1.oci.oraclecloud.com post body.json "/20200107/usage"
 ```
 ## troubleshooting
 ### You get this:
