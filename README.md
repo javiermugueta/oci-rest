@@ -3,7 +3,7 @@ bash wrapper for OCI REST API
 ## setup instructions
 clone this repo<p>
 ```
-git clone https://github.com/javiermugueta/ocirest
+git clone https://github.com/javiermugueta/oci-rest.git
 cd ocirest
 chmod 700 oci-rest samples.sh
  ```
